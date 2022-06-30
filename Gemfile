@@ -32,9 +32,16 @@ gem 'devise'
 gem 'cancancan'
 gem 'draper'
 gem 'pundit'
+gem 'shoulda-callback-matchers'
+gem 'shoulda-matchers'
+gem 'factory_girl_rails', :require => false
+gem 'stepford'
+gem 'simplecov', require: false, group: :test
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'rspec-rails'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
